@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Register</title>
+        <link type="text/css" rel="stylesheet" href="css/style_register.css">
+        <script type="text/javascript" src="js/login.js"></script>
+    </head>
+    <body>
+        <div id=container>
+            <form class="form" action="/regisDB" method="post" accept-charset="utf-8">
+                    <legend>Register</legend>
+                    <input type="text" name="username" value="" placeholder="Username" required><br>
+                    <input type="text" name="email" value="" placeholder="Email" required><br>
+                    <input type="password" name="password" value="" placeholder="Password"><br>
+                    <span id="errordisplay"></span><br>
+                    <input type="submit" name="submit" value="Register">
+                    <a href="login.html" class="back-link"> Back to Login in </a>
+                </form>
+
+        </div>
+
+    </body>
+</html>

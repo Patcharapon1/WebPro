@@ -1,0 +1,123 @@
+:root {
+    --greenSeaweed: rgba(2, 128, 144, 1);
+    --blueQueen: rgba(69, 105, 144, 1);
+    --redFire: rgb(43, 43, 43);
+}
+
+body {
+    background-color: var(--redFire);
+    font-family: 'Asap', sans-serif;
+    background-image: url("BGWeb.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+}
+
+.form {
+    overflow: hidden;
+    background-color: white;
+    padding: 40px 30px 30px 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    transition: transform 300ms, box-shadow 300ms;
+    box-shadow: 5px 10px 10px rgba(var(--greenSeaweed), 0.2);
+}
+
+.form::before,
+.form::after {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 40%;
+    z-index: -1;
+}
+
+.form::before {
+    left: 40%;
+    bottom: -130%;
+    background-color: rgba(var(--blueQueen), 0.15);
+    animation: wawes 6s infinite linear;
+}
+
+.form::after {
+    left: 35%;
+    bottom: -125%;
+    background-color: rgba(var(--greenSeaweed), 0.2);
+    animation: wawes 7s infinite;
+}
+.form>input[type="text"],
+.form>input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 15px -10px;
+}
+
+.form>input {
+    font-family: 'Asap', sans-serif;
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+    width: 100%;
+    border: 0;
+    padding: 10px 10px;
+    margin: 15px -10px;
+}
+
+.form>legend {
+    font-family: 'Asap', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    margin-bottom: 20px;
+}
+
+.form>input[type="submit"] {
+    font-family: 'Asap', sans-serif;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: auto;
+    border: 0;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: auto;
+    border-radius: 5px;
+    background-color: var(--redFire);
+    transition: background-color 300ms;
+}
+
+.form>input[type="submit"]:hover {
+    background-color: darken(var(--redFire), 5%);
+}
+
+.form > input[type="submit"],
+.form > a.back-link {
+    font-family: 'Asap', sans-serif;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: auto;
+    border: 0;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: auto;
+    border-radius: 5px;
+    background-color: var(--redFire);
+    transition: background-color 300ms;
+    text-decoration: none; 
+}

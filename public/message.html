@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="css/style_game.css" />
+  <script type="text/javascript" src="message.js"></script>
+  <title>Game Ball Bouncing</title>
+</head>
+
+<body>
+  
+  <button id="logoutBtn">Logout</button>
+
+
+  <div id="loginform">
+    
+    <div id="userInfo">
+      <span>Username</span><span id="username">User</span>
+    </div>
+    <div id="browsePic">
+      <div id="displayPic">
+        <img src= "img/avatar.png" alt="">
+      </div>
+      <form action="/profilepic" method="post" id="formId" enctype="multipart/form-data">
+        <input type="file" id="fileField" name="avatar" value="fileToUpload" placeholder="" hidden>
+      </form>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div id="menu">
+      <p class="welcome">Welcome to Leaderboard</p>
+    </div>
+
+    <div id="container">
+      <div id="chatbox"></div>
+      <div id="table"></div>
+    </div>
+
+    <input name="userMsg" type="text" id="userMsg" size="1000" />
+    <button id="submitmsg" disabled>Send</button>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+body {
+    font: 14px arial;
+    color: #222;
+    text-align: center;
+    padding: 0px;
+}
+
+form,
+p {
+    margin: 0;
+    padding: 0;
+    font: 14px arial;
+}
+
+span {
+    margin: 5px;
+}
+
+input {
+    font: 14px arial;
+}
+
+#username {
+    font-weight: 600;
+}
+
+#wrapper {
+    margin: 0 auto;
+    padding-bottom: 0px;
+    background: #EBF4FB;
+    width: 504px;
+    border: 1px solid #ACD8F0;
+}
+
+#loginform {
+    margin: 20px auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: #EBF4FB;
+    width: 504px;
+    border: 1px solid #ACD8F0;
+}
+
+#loginform {
+    padding-top: 18px;
+}
+
+
+
+#chatbox {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 10px;
+    background: #fff;
+    height: 270px;
+    width: 430px;
+    border: 1px solid #ACD8F0;
+    overflow: auto;
+}
+
+#usermsg {
+    width: 395px;
+    border: 1px solid #ACD8F0;
+}
+
+#submit {
+    width: 60px;
+}
+
+#menu {
+    padding: 12.5px 25px 12.5px 25px;
+}
+
+.welcome {
+    display: inline;
+}
+
+.message {
+    margin: 0 0 2px 0;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-top: 20px; /* Adjust the margin as needed /
+}
+
+#table {
+    flex: 0 0 200px; / Adjust the width as needed /
+    margin-right: 20px; / Adjust the margin as needed */
+}
+
+#chatbox {
+    flex: 1;
+}
